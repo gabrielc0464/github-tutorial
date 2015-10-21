@@ -18,9 +18,10 @@ by *Gabriel Charriez*
 
 ---
 ## Initial Setup
-Go to the [Github Website](http://www.github.com)
- and click signup. Make sure to click the free plan when you see it.  
-  After you sign in
+1. Go to the [Github Website](http://www.github.com) and click signup. 
+
+2. Make sure to click the free plan when you see it.  
+3. After you sign in you
 
 
 
