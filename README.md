@@ -56,3 +56,22 @@ will be explained in the next section.
 
 ---
 ## Workflow & Commands
+###Git status: 
+One of the most important git commands. What this does is that it tells you if you
+have any files that can were modified and can be added or commited. This is important because you 
+can see where you are in your workflow. The way you write it in the command line is "git status"
+
+### Git add:
+What git add does is that it it puts your file that you modified on the stage so that it can be commited.
+The stage is an imaginary place where files can be commited. The way you write it is "git add "name of file".
+ 
+### Git commit: 
+What this does is that it takes a snapshot of your code so that you know what changes you made
+to that file. If you did something wrong you can revert to the previous version. This also lets you push
+your commit to your remote repo. The way you type this is git commit -m "what you changed". What the -m does is
+that it lets you type a message so you know what change you made. The message must also always be in present tense.
+
+### Git push:
+What git push does is that it literally pushes your commit to the remote repo. Whatever you did
+in the commit is what will show in the remote repo. git push is the command. You dont have to type in
+origin master because its a one time thing.
