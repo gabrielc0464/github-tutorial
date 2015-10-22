@@ -41,7 +41,16 @@ make commits. If its your first time using git it will make you do this.
 
 ---
 ## Repository Setup
+First you make a directory called first repo then cd into it. Then create a README.md file.
+To start using git commands besides git commit you must type git init. What this does is that it
+creates a repository and whatever directory you are in. To set up your repo you must go to github and
+in the top-right click the plus and click new repository. The name of the repo must **ALWAYS**
+match the name of your repo on c9. Click on the ssh button and then copy and paste the lines of code that you 
+see under "... or push an existing repository from the command line". Make sure to paste them one at a time in
+the command line.  
 
+To check if the repository is working do the git add, commit and push commands. These commands
+will be explained in the next section.
 
 
 
