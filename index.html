@@ -1,0 +1,150 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>GitHub Tutorial</title>
+  <meta name="description" content="My Project">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">GitHub Tutorial</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">My Project</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/gabrielc0464/github-tutorial-Gabriel/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/gabrielc0464/github-tutorial-Gabriel/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/gabrielc0464/github-tutorial-Gabriel" class="code">View GitHub Tutorial on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p>by <em>Gabriel Charriez</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p><strong>Git</strong>: is Version Control which lets you see and keep track of the changes<br>
+  you made to your files</p>
+
+<p><strong>Github</strong>: the same as Git but you can collaborate with others and they can also make changes to your code<br>
+  if you allow them to.<br>
+    Github needs Git but Git doesnt need Github</p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<ol>
+<li>Go to the <a href="http://www.github.com">Github Website</a> and click signup. </li>
+<li>Make sure to click the free plan when you see it.<br>
+</li>
+<li>After you sign in you click on the profile icon on the top right</li>
+<li>Click settings then click SSH Keys</li>
+<li>Click add SSH key and then go to your nitrous</li>
+<li>Click your username then go to dashbaord</li>
+<li>Click the SSH keys tab then copy the SSH key to Github</li>
+<li>Add SSH Key</li>
+<li>Go to your nitrous tab then type ssh -T <a href="mailto:git@github.com">git@github.com</a> then type yes</li>
+<li> type in git config in nitrous </li>
+<li>Type in global user.name and in quotes type in you name</li>
+<li>Type in global user.email and in quotes type in your email address</li>
+</ol>
+
+<p>What git config does is that it makes you type in your user name and email so that it can use that information when you 
+make commits. If its your first time using git it will make you do this.</p>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<p>First you make a directory called first repo then cd into it. Then create a README.md file.
+To start using git commands besides git commit you must type git init. What this does is that it
+creates a repository and whatever directory you are in. To set up your repo you must go to github and
+in the top-right click the plus and click new repository. The name of the repo must <strong>ALWAYS</strong>
+match the name of your repo on c9. Click on the ssh button and then copy and paste the lines of code that you 
+see under "... or push an existing repository from the command line". Make sure to paste them one at a time in
+the command line.  </p>
+
+<p>To check if the repository is working do the git add, commit and push commands. These commands
+will be explained in the next section.</p>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<h3>
+<a id="git-status" class="anchor" href="#git-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git status:</h3>
+
+<p>One of the most important git commands. What this does is that it tells you if you
+have any files that can were modified and can be added or commited. This is important because you 
+can see where you are in your workflow. The way you write it in the command line is "git status"</p>
+
+<h3>
+<a id="git-add" class="anchor" href="#git-add" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git add:</h3>
+
+<p>What git add does is that it it puts your file that you modified on the stage so that it can be commited.
+The stage is an imaginary place where files can be commited. The way you write it is "git add "name of file".</p>
+
+<h3>
+<a id="git-commit" class="anchor" href="#git-commit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git commit:</h3>
+
+<p>What this does is that it takes a snapshot of your code so that you know what changes you made
+to that file. If you did something wrong you can revert to the previous version. This also lets you push
+your commit to your remote repo. The way you type this is git commit -m "what you changed". What the -m does is
+that it lets you type a message so you know what change you made. The message must also always be in present tense.</p>
+
+<h3>
+<a id="git-push" class="anchor" href="#git-push" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git push:</h3>
+
+<p>What git push does is that it literally pushes your commit to the remote repo. Whatever you did
+in the commit is what will show in the remote repo. git push is the command. You dont have to type in
+origin master because its a one time thing.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/gabrielc0464" class="avatar"><img src="https://avatars1.githubusercontent.com/u/14977815?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/gabrielc0464">gabrielc0464</a> maintains <a href="https://github.com/gabrielc0464/github-tutorial-Gabriel">GitHub Tutorial</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/gabrielc0464/github-tutorial-Gabriel/tarball/master" class="tar">tar</a><a href="https://github.com/gabrielc0464/github-tutorial-Gabriel/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
